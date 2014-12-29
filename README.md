@@ -1,4 +1,4 @@
 leetcode
 ========
 
-my solutions for leetcode online judge
+my solutions for leetcode
