@@ -22,6 +22,28 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+
+//a best solution
+// 
+// 1:       bool isValidBST(TreeNode *root) {  
+// 2:            return IsValidBST(root, INT_MIN, INT_MAX);  
+// 3:       }
+  
+// 4:       bool IsValidBST(TreeNode* node, int MIN, int MAX)   
+// 5:       {  
+// 6:            if(node == NULL)  
+// 7:                  return true;  
+// 8:            if(node->val > MIN   
+// 9:                      && node->val < MAX  
+// 10:                      && IsValidBST(node->left,MIN,node->val)  
+// 11:                      && IsValidBST(node->right,node->val,MAX))  
+// 12:                 return true;  
+// 13:            else   
+// 14:                 return false;  
+// 15:       }  
+
+
+
 class Solution {
 public:
     bool isValidBST(TreeNode* root)
